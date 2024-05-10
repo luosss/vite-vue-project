@@ -6,12 +6,14 @@
     </div>
     <el-table ref="tableRef" :data="tableData" style="width: 100%" border>
       <el-table-column prop="date" label="Date" width="180" align="center" />
-      <el-table-column prop="name" label="Name" width="180" align="center" >
-        <el-table-column>
-          
-        </el-table-column>
+      <el-table-column prop="name" label="Name" width="180" align="center">
+        <el-table-column> </el-table-column>
       </el-table-column>
-      <el-table-column prop="address" label="Address" align="center" ></el-table-column>
+      <el-table-column
+        prop="address"
+        label="Address"
+        align="center"
+      ></el-table-column>
     </el-table>
   </div>
 </template>
@@ -20,7 +22,6 @@
 import { ref, reactive } from "vue";
 import * as XLSX from "xlsx";
 import XLSXS from "xlsx-js-style";
-
 
 const tableRef: any = ref(null);
 
@@ -60,7 +61,7 @@ function exportExcel() {
   const centerStyle = {
     alignment: { horizontal: "center", vertical: "center" },
   };
-    XLSX.utils.sheet_add_aoa(ws, [["日期", "姓名", "地址"]]);
+  XLSX.utils.sheet_add_aoa(ws, [["日期", "姓名", "地址"]]);
   // 将样式应用到所有单元格
   const range = XLSXS.utils.decode_range(ws["!ref"]);
   for (let R = range.s.r; R <= range.e.r; ++R) {
@@ -70,9 +71,9 @@ function exportExcel() {
     }
   }
 
-
-
   XLSXS.utils.book_append_sheet(wb, ws, "Sheet1");
   XLSXS.writeFile(wb, "example.xlsx");
 }
+
+
 </script>

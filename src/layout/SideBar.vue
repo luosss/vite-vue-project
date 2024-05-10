@@ -110,6 +110,29 @@ const menuList: any = [
       },
     ],
   },
+  {
+    icon: "Calendar",
+    index: "3",
+    title: "布局相关",
+    permiss: "2",
+    subs: [
+      {
+        index: "/gridLayout",
+        title: "grid布局",
+        permiss: "2",
+      },
+      {
+        index: "/flexLayout",
+        title: "flex筛子布局",
+        permiss: "2",
+      },
+      {
+        index: "/flexLayout2",
+        title: "flex常见布局",
+        permiss: "2",
+      },
+    ],
+  },
 ];
 </script>
 

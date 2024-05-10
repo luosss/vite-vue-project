@@ -60,6 +60,30 @@ const router = createRouter({
           // which is lazy-loaded when the route is visited.
           component: () => import('../views/Table/ComplexTable.vue')
         },
+        {
+          path: '/gridLayout',
+          name: 'gridLayout',
+          // route level code-splitting
+          // this generates a separate chunk (About.[hash].js) for this route
+          // which is lazy-loaded when the route is visited.
+          component: () => import('../views/Layout/grid.vue')
+        },
+        {
+          path: '/flexLayout',
+          name: 'flexLayout',
+          // route level code-splitting
+          // this generates a separate chunk (About.[hash].js) for this route
+          // which is lazy-loaded when the route is visited.
+          component: () => import('../views/Layout/flex.vue')
+        },
+        {
+          path: '/flexLayout2',
+          name: 'flexLayout2',
+          // route level code-splitting
+          // this generates a separate chunk (About.[hash].js) for this route
+          // which is lazy-loaded when the route is visited.
+          component: () => import('../views/Layout/flex2.vue')
+        },
       ]
     },
    
