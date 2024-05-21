@@ -12,10 +12,12 @@
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
+    "@types/three": "^0.164.0",
     "element-plus": "^2.6.3",
     "file-saver": "^2.0.5",
     "nprogress": "^0.2.0",
     "pinia": "^2.1.7",
+    "three": "^0.164.1",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0",
     "xlsx": "^0.18.5",

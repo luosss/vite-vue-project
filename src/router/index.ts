@@ -84,6 +84,30 @@ const router = createRouter({
           // which is lazy-loaded when the route is visited.
           component: () => import('../views/Layout/flex2.vue')
         },
+        {
+          path: '/three',
+          name: 'three',
+          // route level code-splitting
+          // this generates a separate chunk (About.[hash].js) for this route
+          // which is lazy-loaded when the route is visited.
+          component: () => import('../views/Three/three.vue')
+        },
+        {
+          path: '/three2',
+          name: 'three2',
+          // route level code-splitting
+          // this generates a separate chunk (About.[hash].js) for this route
+          // which is lazy-loaded when the route is visited.
+          component: () => import('../views/Three/three2.vue')
+        },
+        {
+          path: '/three3',
+          name: 'three3',
+          // route level code-splitting
+          // this generates a separate chunk (About.[hash].js) for this route
+          // which is lazy-loaded when the route is visited.
+          component: () => import('../views/Three/three3.vue')
+        },
       ]
     },
    

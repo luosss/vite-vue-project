@@ -132,6 +132,28 @@ const menuList: any = [
         permiss: "2",
       },
     ],
+  },{
+    icon: "Calendar",
+    index: "4",
+    title: "Three相关",
+    permiss: "2",
+    subs: [
+      {
+        index: "/three",
+        title: "three",
+        permiss: "2",
+      },
+      {
+        index: "/three2",
+        title: "three2",
+        permiss: "2",
+      },
+      {
+        index: "/three3",
+        title: "three3",
+        permiss: "2",
+      },
+    ],
   },
 ];
 </script>
